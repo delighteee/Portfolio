@@ -1,0 +1,256 @@
+body{
+    margin:0px;
+    overflow-x: hidden;
+    
+}
+
+:root{
+  --main-padding: 80px 0px 80px 80px;
+  --black-color:#1c1813;
+  --accent-color1:#ffe8d6;
+  --white:aliceblue;
+  --accent-color2: #d0a696;
+  --accent-color3: #eaac8b;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./coolvetica\ compressed\ hv.otf);
+}
+
+.container{
+max-width: 100rem;
+margin: 0 auto;
+}
+
+.main-nav {
+  position: fixed;
+  display: flex;
+  background-color: var(--black-color);
+  justify-content: center;
+  width: 100%;
+}
+
+.main-nav a{
+  float: right;
+  color:var(--accent-color1);
+  text-align: center;
+  padding: 32px 48px;
+  text-decoration: none;
+  font-size: 16px;
+  justify-content: center;
+  margin-left: 0px;
+}
+
+
+/*-------------------------section 1------------------------*/
+
+
+
+h1 {
+  margin:0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  color:var(--accent-color1);
+  padding: 0px 20px 20px 0px;
+}
+
+h2{
+  margin-top: 0px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3{
+  margin-top: 0px;
+  font-weight: 200;
+  font-size: 32px;
+  padding: 0px 20px 0px 0px;
+}
+
+p{
+  margin-top: 0px;
+  font-size: 20px;
+ width: 40%;
+ line-height: 150%;
+ display: inline-block;}
+
+
+ul{
+  width: 600px;
+  max-width: 50%;
+}
+.flex-container {
+display: grid;
+grid-auto-flow: row;
+width: 50%
+ 
+}
+
+.grid-container{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 3fr;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.one{
+  background-color: #e9c46a;
+}
+.item{
+  display: flex;
+  background-color: #f0b186;
+  width: 20%;
+  align-items: center;
+  column-gap: 10px;
+  justify-content: center;
+  border-radius: 10px;
+
+}
+.item-one, .item-two, .item-three {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid red;
+  }
+
+.item-one{
+  display: flex;
+}
+
+ section {
+  background-color:var(--accent-color1);
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: var(--main-padding)
+  
+  }
+
+ .hobbies{ 
+  background-color: var(--black-color);
+  color: var(--white);
+}
+
+.goals{
+  background-color: var(--accent-color1);
+}
+.intro {
+width: 100vw;
+max-height: 600px;
+background: url(./Image/my_pic.png);
+display: flex;
+flex-direction: column;
+justify-content: left;
+align-items: left;
+padding-top: 200px;
+padding-left: 124px;
+color: var(--white);
+}
+
+
+.list
+{ font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--black-color);
+  width: 100%;
+  padding-bottom: 64px;
+  margin: 0px;
+
+}
+
+#About{
+  
+  width: 50%;
+  max-width: 800px;
+  top: 320px;
+  font-family: 'playfair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+
+}
+
+.grid{
+  display: grid;
+}
+
+
+
+/*-------------------------section 2------------------------*/
+
+
+.education{
+  height: 500px;
+  background-color: var(--accent-color3);
+}
+
+
+
+
+.experience{
+ background-color: var(--accent-color2);
+}
+
+.company_name{
+    text-align:left;
+    
+}
+
+
+
+
+
+
+article{
+    margin-left:0px;
+    margin-bottom: 24px;
+    padding: 1rem 0;
+    
+}
+
+
+a {
+  color: var(--black-color);
+  font-size: 24px ;
+  text-decoration: none;
+
+}
+
+
+a:hover {
+  color: var(--accent-color3);
+  background-color: rgb(30, 30, 30);
+
+}
+
+a:active {
+  color: brown;
+}
+
+input::placeholder{
+  padding-left: 16px;
+  font-size: 24px;
+}
+  
+
+@media (max-width: 600px) {
+  #intro h1 h3 p  {
+    width: 80%;
+}
+@media (max-width: 600px) {
+  #intro {
+    padding-left: 24px;
+    height: 400px;
+    padding-top: 50px;
+    justify-content: center;
+}

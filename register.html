@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+	  <link rel="stylesheet" type="text/css" href="./form.css" />
+  </head>
+  <body>
+    <nav>
+        <div class="main-nav">
+            <a href="./portfoliopage.html">About Me</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./register.html">Register</a>
+            <a href="./login.html">Login</a>
+        </div>
+    </nav>
+    <h1>Create an account</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action=''>
+      <fieldset>
+        <label>First name <input type="text" name="first-name" required placeholder="First-name"/></label>
+        <label>Last name <input type="text" name="flast-namae" required placeholder="last-name"/></label>
+        <label>Phone <input type="integer" name="phone" required placeholder="phone"/></label>
+    </label>
+    <label> Gender</label> <input  class="input" list="priority" name="priority" placeholder="Select an option">
+             <datalist id="Male">
+               <option value="Female">
+               <option value="Prefer not to say">     
+             </datalist></label>
+        <label>Country<input type="country" name="country" placeholder="country" required /></label>
+        <label>State/province<input type="state" name="state" placeholder="state" required /></label>
+        <label>Password<input type="password" name="password" placeholder="password" required /></label>
+        <label>Confirm password<input type="password" name="password" placeholder="password" required /></label>
+      </fieldset>
+
+      <input class="button" type="submit" onclick="alert('Thank you, we have recieved your response')" value="Create account">
+      <!---->
+     
+       
